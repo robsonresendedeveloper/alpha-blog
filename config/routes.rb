@@ -8,6 +8,9 @@ AlphaBlog::Application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
 
+  #This gives me all the paths to create(new), edit, delete, etc. articles
+  resources :articles
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
